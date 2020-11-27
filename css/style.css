@@ -139,7 +139,7 @@ button:hover {
   border-radius: 30px;
   text-align: center;
   border: none;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 button:hover {
@@ -168,8 +168,8 @@ button:hover {
     width: 150px;
   }
   .imagen-intro img {
-    margin-top: 20px;
-    max-width: 500px;
+    width: 330px;
+    max-width: 330px;
   }
   .seccion-imagen {
     display: -webkit-box;
@@ -295,7 +295,7 @@ button:hover {
 }
 
 .main .seccion-main {
-  width: 80%;
+  width: 100%;
 }
 
 .main .seccion-main .article-main {
@@ -315,7 +315,7 @@ button:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  .seccion-main {
+  .main .seccion-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -327,6 +327,7 @@ button:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 80%;
     max-width: 1100px;
   }
 }
@@ -345,8 +346,9 @@ button:hover {
           align-items: center;
   height: 100vh;
   background-color: #181f2a;
-  padding: 60px 30px;
+  padding: 30px;
   width: 80%;
+  margin-bottom: 100px;
 }
 
 .productive img {
@@ -400,6 +402,7 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 0px;
   }
   .productive div {
     width: 50vh;
@@ -407,8 +410,7 @@ button:hover {
     padding-left: 50px;
   }
   .productive img {
-    max-width: 30vw;
-    padding: 30px;
+    max-width: 35vw;
     margin-left: 30px;
     margin-bottom: 0;
   }
@@ -423,6 +425,7 @@ button:hover {
 /* ---SECCION PRODUCTIVE ------termina seccion------------------*/
 /* ---SECCION REVIEWS ------------------------*/
 .reviews {
+  position: relative;
   background-color: #181f2a;
   color: white;
   display: -webkit-box;
@@ -438,15 +441,15 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 169px 30px 300px 30px;
+  padding: 30px;
   position: relative;
   width: 80%;
 }
 
 .reviews > img {
   position: absolute;
-  top: 146px;
-  left: 55px;
+  top: 8px;
+  left: 30px;
   max-height: 23px;
 }
 
@@ -506,7 +509,8 @@ button:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 30px 30px 300px 30px;
+    padding: 30px;
+    margin-bottom: 50px;
   }
   .reviews > img {
     top: 12px;
@@ -524,7 +528,7 @@ button:hover {
 .get-early {
   position: absolute;
   z-index: 1;
-  top: 66%;
+  top: -15%;
   color: white;
   padding: 20px;
   width: 90%;
@@ -610,6 +614,7 @@ button:hover {
 
 .footer {
   position: relative;
+  margin-top: 200px;
   z-index: 0;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
@@ -753,13 +758,16 @@ button:hover {
   color: #339ecc;
 }
 
-@media only screen and (min-width: 736px) {
+@media only screen and (min-width: 768px) {
   * {
     margin-top: 0;
   }
   .get-early {
-    top: 78%;
-    width: 80%;
+    top: -60%;
+    width: 81%;
+    left: 0%;
+    right: 0%;
+    max-width: 780px;
   }
   .get-early .botones-early {
     display: -webkit-box;
@@ -804,8 +812,9 @@ button:hover {
   }
   .footer .logo-footer {
     position: absolute;
-    top: -25%;
+    top: 20%;
     width: 120px;
+    margin-top: 0px;
   }
   .footer .div-footer {
     width: 30%;

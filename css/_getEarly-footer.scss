@@ -2,7 +2,7 @@
 .get-early {
     position: absolute;
     z-index: 1;
-    top: 66%;
+    top: -15%;
     color: white;
     padding: 20px;
     width: 90%;
@@ -56,6 +56,7 @@
 }
 .footer {
     position: relative;
+    margin-top: 200px;
     z-index: 0;
     font-family: 'Open Sans', sans-serif;
     //height: 40vh;
@@ -142,17 +143,21 @@
 
     }
 }
-@media only screen and (min-width: 736px) {
+@media only screen and (min-width: 768px) {
     *{
         margin-top: 0;
         
     }
     .get-early {
-        top: 78%;
-        width: 80%;
+        top: -60%;
+        width: 81%;
+        left: 0%;
+        right: 0%;
+        max-width: 780px;
         
         .botones-early {
             @include flex(row, space-between, center);
+            
             
             .btn-get-started-free {
                 width: 30%;
@@ -170,9 +175,9 @@
         
         .logo-footer{
             position: absolute;
-            top: -25%;
+            top: 20%;
             width: 120px;
-            
+            margin-top: 0px;
         }
         padding: 30px;
         @include flex(row, space-between, baseline);

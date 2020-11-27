@@ -6,8 +6,9 @@
     align-items: center;
     height: 100vh;
     background-color: $primary-dark-blue-main;
-    padding: 60px 30px;
+    padding:30px;
     width: 80%;
+    margin-bottom: 100px;
 }
 
 .productive img{
@@ -57,17 +58,18 @@
     .productive{
         flex-direction: row;
         align-items: center;
+        margin-bottom: 0px;
     }
 
     .productive div{
         width: 50vh;
         margin: 30px;
         padding-left: 50px;
+        
     }
 
     .productive img{
-        max-width: 30vw;
-        padding: 30px;
+        max-width: 35vw;
         margin-left: 30px;
         margin-bottom: 0;
     }
@@ -85,20 +87,21 @@
 
 /* ---SECCION REVIEWS ------------------------*/
 .reviews{
+    position: relative;
     background-color: $primary-dark-blue-main;
     color: $neutral;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 169px 30px 300px 30px;
+    padding: 30px;
     position: relative;
     width: 80%;
 }
 .reviews>img{
     position: absolute;
-    top: 146px;
-    left: 55px;
+    top: 8px;
+    left: 30px;
     max-height: 23px;
 }
 /* Componente  article-review ~~~~~~~~~~~~~ */
@@ -144,7 +147,8 @@
     .reviews{
         flex-direction: row;
         justify-content: space-between;
-        padding: 30px 30px 300px 30px;
+        padding: 30px;
+        margin-bottom: 50px;
     }
     .reviews>img {
         top: 12px;

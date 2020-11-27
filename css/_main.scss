@@ -5,7 +5,7 @@
     justify-content: center;
 
     .seccion-main{
-        width: 80%;
+        width: 100%;
         .article-main{
             text-align: center;
             padding: 30px;
@@ -23,11 +23,15 @@
 }
 
 @media only screen and (min-width:768px){
-    .seccion-main{
-        display:flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        max-width: 1100px;
+    .main {
+        .seccion-main{
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 1100px;
+            
+        }
     }
 }
