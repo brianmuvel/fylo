@@ -88,6 +88,9 @@
     .direccion {
         .fas {
             font-size: 30px;
+            font-size: 25px;
+            padding-right: 19px;
+            margin-left: -18px;
         }
         @include flex(row,space-between , flex-start);
         .direccion-info {

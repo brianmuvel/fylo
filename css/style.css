@@ -687,6 +687,9 @@ button:hover {
 
 .footer .direccion .fas {
   font-size: 30px;
+  font-size: 25px;
+  padding-right: 19px;
+  margin-left: -18px;
 }
 
 .footer .direccion .direccion-info {
