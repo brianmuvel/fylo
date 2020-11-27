@@ -1,0 +1,161 @@
+
+/* ---SECCION PRODUCTIVE ------------------------*/
+.productive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: $primary-dark-blue-main;
+    padding: 60px 30px;
+    width: 80%;
+}
+
+.productive img{
+    width: 90vw;
+    margin-bottom: 50px;
+}
+
+.productive h2{
+    font-family: $heading-font;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 26px;
+}
+
+.productive p{
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.productive a{
+    color: hsl(176, 68%, 64%);
+    padding-top: 26px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    max-width: 137px;
+}
+
+.productive a:hover{
+    color: $neutral;
+    border-bottom: 1px solid #fff;
+}
+
+.productive a::after{
+    content: "___";
+  background: url(../images/icon-arrow.svg) no-repeat center;
+  color: $primary-dark-blue-main;
+}
+.productive a:hover::after{
+    background: url(../images/icon-arrow-w.svg) no-repeat center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .productive{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .productive div{
+        width: 50vh;
+        margin: 30px;
+        padding-left: 50px;
+    }
+
+    .productive img{
+        max-width: 30vw;
+        padding: 30px;
+        margin-left: 30px;
+        margin-bottom: 0;
+    }
+
+    .productive h2{
+        font-size: 22px;
+    }
+
+    .productive p{
+        margin-bottom: 30px;
+    }
+  }
+
+/* ---SECCION PRODUCTIVE ------termina seccion------------------*/
+
+/* ---SECCION REVIEWS ------------------------*/
+.reviews{
+    background-color: $primary-dark-blue-main;
+    color: $neutral;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 169px 30px 300px 30px;
+    position: relative;
+    width: 80%;
+}
+.reviews>img{
+    position: absolute;
+    top: 146px;
+    left: 55px;
+    max-height: 23px;
+}
+/* Componente  article-review ~~~~~~~~~~~~~ */
+.article-review{
+    background-color: #212A3B;
+    padding: 30px;
+    font-size: 13px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.article-review p{
+    line-height: 1.8;
+}
+
+.article-review>div{
+    display: flex;
+    margin-top: 20px;
+}
+
+.autor{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.foto-autor{
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 30px;
+}
+
+.autor h3{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.autor h4{
+    font-size: 8px;
+}
+/* Termina- Componente -  article-review ~~~~~ */
+@media screen and (min-width: 768px) {
+    .reviews{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 30px 300px 30px;
+    }
+    .reviews>img {
+        top: 12px;
+        left: 67px;
+        max-height: 33px;
+    }
+    .article-review{
+        margin: 15px;
+        max-height: 292px;
+        z-index: 2;
+    }
+    
+}
+/* ---SECCION REVIEWS ------termina seccion------------------*/

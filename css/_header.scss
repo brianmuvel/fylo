@@ -1,0 +1,179 @@
+.background{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background: $primary-dark-blue-intro url(../images/bg-curvy-mobile.svg) center bottom no-repeat;
+    background-size: contain;
+}
+.imagen-intro img{
+    margin-top: 50px;
+    max-width: 300px;
+}
+.header{
+    margin-top: 30px;
+    width: 90%;
+    text-align: center;
+}
+.logo-principal{
+    width: 100px;
+}
+.seccion-imagen{
+    @include flex(column, center, center);
+}
+.seccion-nav{
+    @include flex(row, space-between, center);
+}
+.nav{
+    @include flex(row, space-between, center);
+    font-size: 13px;
+}
+.nav {
+    a{
+    width: 50px;
+    opacity: 0.8;
+    transition: opacity 0.6s ease-in;
+    }
+    a:hover{
+        opacity: 1;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+.btn-get-started {
+    background: $accent-secondary;
+    color: white;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+    margin: 30px 0;
+    
+}
+button:hover{
+    cursor: pointer;
+    background: $hover-btn;
+}
+
+.texto-intro {
+    max-width: 300px;
+    h1{
+    margin: 20px 0;
+    }
+    p{
+        line-height: 1.7;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .background{
+        background: $primary-dark-blue-intro url(../images/bg-curvy-desktop.svg) center bottom no-repeat;
+        background-size: contain;
+    }
+    .logo-principal{
+        width: 150px;
+    }
+    .imagen-intro img{
+        margin-top: 20px;
+        max-width: 500px;
+    }
+    .seccion-imagen{
+        @include flex(column, center, center);
+    }
+    .texto-intro {
+        max-width: 400px;
+        h1{
+            font-size: 22px;
+        }
+    }
+    .nav {
+        a{
+        width: 100px;
+        }
+    }
+}
+
+
+/* @include flex(row, space-between, center);
+
+ .imagen-intro{
+    width: 38%;
+    margin-bottom: 30px;
+
+}
+.header {
+    width: 80%;
+    height: 100vh;
+    
+    .seccion-nav {
+        .logo-principal {
+            width: 50px;
+        }
+        padding: 10px;
+        @include flex(row, space-between, center);
+        .nav {
+            font-size: 70%;
+            align-self: center;
+            a {
+                padding: 5px;
+                color: white;
+            }
+        }
+    }
+    .seccion-imagen {
+        
+        
+        
+        .imagen-intro {
+            align-self: center;
+        }
+        .texto-intro {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin-top: 10px;
+                line-height: 0.6cm;
+                font-weight: normal;
+            }
+        }
+        .btn-get-started {
+            background: hsl(198, 60%, 50%);
+            color: white;
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 30px;
+            text-align: center;
+            border: none;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .header {
+        .seccion-nav {
+            padding: 20px;
+            .nav {
+                font-size: 100%;
+            }
+        }
+        .seccion-imagen {
+            .imagen-intro {
+                .slider {
+                    width : 500px;
+                }
+            }
+            .texto-intro {
+                max-width: 500px;
+                h1 {
+                    max-width: 400px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+ */
